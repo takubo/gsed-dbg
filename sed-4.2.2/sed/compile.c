@@ -1039,6 +1039,9 @@ compile_program(vector)
 	break;
 
       cur_cmd = next_cmd_entry(&vector);
+#if 1 //SED_DBG
+      cur_cmd->line = cur_input.line;
+#endif
       if (compile_address(&a, ch))
 	{
 	  if (a.addr_type == ADDR_IS_STEP

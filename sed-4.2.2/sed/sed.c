@@ -63,6 +63,10 @@ char *write_mode = "w";
 /* Do we need to be pedantically POSIX compliant? */
 enum posixicity_types posixicity;
 
+#if 1 //SED_DBG
+bool debug_flag = false;
+#endif
+
 /* How long should the `l' command's output line be? */
 countT lcmd_out_line_len = 70;
 
@@ -157,10 +161,14 @@ main(argc, argv)
   int argc;
   char **argv;
 {
+#if 1 // SED_DBG && REG_PERL
+#define SHORTOPTS "dbsnrzRuEe:f:l:i::V:"
+#else
 #ifdef REG_PERL
 #define SHORTOPTS "bsnrzRuEe:f:l:i::V:"
 #else
 #define SHORTOPTS "bsnrzuEe:f:l:i::V:"
+#endif
 #endif
 
   static struct option longopts[] = {
@@ -184,6 +192,9 @@ main(argc, argv)
     {"help", 0, NULL, 'h'},
 #ifdef ENABLE_FOLLOW_SYMLINKS
     {"follow-symlinks", 0, NULL, 'F'},
+#endif
+#if 1 //SED_DBG
+    {"debug", 0, NULL, 'd'},
 #endif
     {NULL, 0, NULL, 0}
   };
@@ -301,6 +312,12 @@ main(argc, argv)
 	  unbuffered = true;
 	  break;
 
+#if 1 //SED_DBG
+	case 'd':
+	  debug_flag = true;
+	  break;
+#endif
+
 	case 'v':
           version_etc(stdout, program_name, PACKAGE_NAME, VERSION,
                       AUTHORS, (char *) NULL);
@@ -309,6 +326,7 @@ main(argc, argv)
 	  exit (0);
 	case 'h':
 	  usage(0);
+
 	default:
 	  usage(4);
 	}

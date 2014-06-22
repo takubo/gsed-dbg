@@ -177,6 +177,9 @@ struct sed_cmd {
     unsigned char *translate;
     char **translatemb;
   } x;
+#if 1 //SED_DBG
+  countT line;
+#endif
 };
 
 
