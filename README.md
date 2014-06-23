@@ -1,4 +1,4 @@
-gsed_dbg
+gsed-dbg
 ====
 
 GNU SED + Debugger
