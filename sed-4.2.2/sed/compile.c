@@ -19,6 +19,9 @@
 /* compile.c: translate sed source into internal form */
 
 #include "sed.h"
+#if 1 //SED_DBG
+#include "debug.h"
+#endif
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>

@@ -21,6 +21,9 @@
 #define FREAD_BUFFER_SIZE	8192
 
 #include "sed.h"
+#if 1 //SED_DBG
+#include "debug.h"
+#endif
 
 #include <stddef.h>
 #include <stdio.h>
@@ -1271,10 +1274,13 @@ execute_program(vec, input)
   while (cur_cmd < end_cmd)
     {
 #if 1 //SED_DBG
-      extern bool debug_flag;
       if (debug_flag)
 	{
-	  printf("line = %d\n", cur_cmd->line);
+	  int debug_stat;
+	  if (debug_stat = stop_check(cur_cmd->line))
+	    {
+	      debug_cmd(debug_stat, NULL, cur_cmd, &line, &hold, replaced);
+	    }
 	}
 #endif
       if (match_address_p(cur_cmd, input) != cur_cmd->addr_bang)

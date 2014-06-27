@@ -18,6 +18,9 @@
 
 
 #include "sed.h"
+#if 1 //SED_DBG
+#include "debug.h"
+#endif
 
 
 #include <stdio.h>
@@ -343,6 +346,14 @@ main(argc, argv)
 	usage(4);
     }
   check_final_program(the_program);
+
+#if 1 //SED_DBG
+  if (debug_flag)
+    {
+      gsed_debug_open_connection();
+      debug_cmd(debug_stat_start, NULL, NULL, NULL, NULL, false);
+    }
+#endif
 
   return_code = process_files(the_program, argv+optind);
 

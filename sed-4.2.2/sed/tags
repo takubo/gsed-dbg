@@ -1,0 +1,485 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ADDR_IS_LAST	sed.h	/^  ADDR_IS_LAST		\/* address is $ *\/$/;"	e	enum:addr_types
+ADDR_IS_NULL	sed.h	/^  ADDR_IS_NULL,		\/* null address *\/$/;"	e	enum:addr_types
+ADDR_IS_NUM	sed.h	/^  ADDR_IS_NUM,		\/* a.addr_number is valid *\/$/;"	e	enum:addr_types
+ADDR_IS_NUM_MOD	sed.h	/^  ADDR_IS_NUM_MOD,	\/* a.addr_number is valid, addr_step is modulo *\/$/;"	e	enum:addr_types
+ADDR_IS_REGEX	sed.h	/^  ADDR_IS_REGEX,	\/* a.addr_regex is valid *\/$/;"	e	enum:addr_types
+ADDR_IS_STEP	sed.h	/^  ADDR_IS_STEP,		\/* address is +N (only valid for addr2) *\/$/;"	e	enum:addr_types
+ADDR_IS_STEP_MOD	sed.h	/^  ADDR_IS_STEP_MOD,	\/* address is ~N (only valid for addr2) *\/$/;"	e	enum:addr_types
+ANCIENT_VERSION	compile.c	165;"	d	file:
+ANCIENT_VERSION	compile.c	168;"	d	file:
+AUTHORS	sed.c	31;"	d	file:
+AUTHORS	sed.c	34;"	d	file:
+BAD_BANG	compile.c	143;"	d	file:
+BAD_BANG	compile.c	146;"	d	file:
+BAD_COMMA	compile.c	144;"	d	file:
+BAD_COMMA	compile.c	147;"	d	file:
+BAD_DELIM	compile.c	164;"	d	file:
+BAD_DELIM	compile.c	167;"	d	file:
+BAD_MODIF	regexp.c	39;"	d	file:
+BAD_STEP	compile.c	145;"	d	file:
+BAD_STEP	compile.c	148;"	d	file:
+BREAK_NUM	debug.h	24;"	d
+BRLEN	sed.h	263;"	d
+CLOSE_BRACE	compile.c	37;"	d	file:
+CLOSE_BRACE	compile.c	40;"	d	file:
+CLOSE_BRACKET	compile.c	35;"	d	file:
+CLOSE_BRACKET	compile.c	38;"	d	file:
+COST	fmt.c	/^typedef long COST;$/;"	t	file:
+END_ERRORS	compile.c	169;"	d	file:
+END_ERRORS	compile.c	172;"	d	file:
+END_ERRORS	regexp.c	40;"	d	file:
+EQUIV	fmt.c	46;"	d	file:
+EXCESS_CLOSE_BRACE	compile.c	147;"	d	file:
+EXCESS_CLOSE_BRACE	compile.c	150;"	d	file:
+EXCESS_G_OPT	compile.c	160;"	d	file:
+EXCESS_G_OPT	compile.c	163;"	d	file:
+EXCESS_JUNK	compile.c	148;"	d	file:
+EXCESS_JUNK	compile.c	151;"	d	file:
+EXCESS_N_OPT	compile.c	161;"	d	file:
+EXCESS_N_OPT	compile.c	164;"	d	file:
+EXCESS_OPEN_BRACE	compile.c	146;"	d	file:
+EXCESS_OPEN_BRACE	compile.c	149;"	d	file:
+EXCESS_P_OPT	compile.c	159;"	d	file:
+EXCESS_P_OPT	compile.c	162;"	d	file:
+EXPECTED_SLASH	compile.c	149;"	d	file:
+EXPECTED_SLASH	compile.c	152;"	d	file:
+EXPERIMENTAL_DASH_N_OPTIMIZATION	execute.c	19;"	d	file:
+FREAD_BUFFER_SIZE	execute.c	21;"	d	file:
+GETC	fmt.c	89;"	d	file:
+INCOMPLETE_CMD	compile.c	168;"	d	file:
+INCOMPLETE_CMD	compile.c	171;"	d	file:
+INITIAL_BUFFER_SIZE	execute.c	20;"	d	file:
+INVALID_CMD	debug.c	/^  INVALID_CMD,$/;"	e	enum:__anon1	file:
+INVALID_LINE_0	compile.c	166;"	d	file:
+INVALID_LINE_0	compile.c	169;"	d	file:
+LEEWAY	fmt.c	33;"	d	file:
+LINE_COST	fmt.c	55;"	d	file:
+LINE_CREDIT	fmt.c	82;"	d	file:
+MAXCOST	fmt.c	43;"	d	file:
+MAXWORDS	fmt.c	87;"	d	file:
+MBRLEN	sed.h	260;"	d
+MBRTOWC	sed.h	247;"	d
+MBSINIT	sed.h	257;"	d
+MIN_ALLOCATE	utils.c	505;"	d	file:
+MORE_CMD	debug.c	/^  MORE_CMD,$/;"	e	enum:__anon1	file:
+MSGLEN	debug.h	17;"	d
+MSGLEN	net.c	17;"	d	file:
+NOBREAK_COST	fmt.c	73;"	d	file:
+NO_CLOSE_BRACE_ADDR	compile.c	150;"	d	file:
+NO_CLOSE_BRACE_ADDR	compile.c	153;"	d	file:
+NO_COLON_ADDR	compile.c	151;"	d	file:
+NO_COLON_ADDR	compile.c	154;"	d	file:
+NO_COMMAND	compile.c	153;"	d	file:
+NO_COMMAND	compile.c	156;"	d	file:
+NO_REGEX	regexp.c	38;"	d	file:
+NO_SHARP_ADDR	compile.c	152;"	d	file:
+NO_SHARP_ADDR	compile.c	155;"	d	file:
+N_	regexp.c	27;"	d	file:
+N_	regexp.c	29;"	d	file:
+ONE_ADDR	compile.c	154;"	d	file:
+ONE_ADDR	compile.c	157;"	d	file:
+OPEN_BRACE	compile.c	36;"	d	file:
+OPEN_BRACE	compile.c	39;"	d	file:
+OPEN_BRACKET	compile.c	34;"	d	file:
+OPEN_BRACKET	compile.c	37;"	d	file:
+ORPHAN_COST	fmt.c	63;"	d	file:
+PAREN_BONUS	fmt.c	76;"	d	file:
+PERL_HELP	sed.c	103;"	d	file:
+PERL_HELP	sed.c	106;"	d	file:
+POSIXLY_BASIC	sed.h	/^  POSIXLY_BASIC		\/* pedantically POSIX *\/$/;"	e	enum:posixicity_types
+POSIXLY_CORRECT	sed.h	/^  POSIXLY_CORRECT,	\/* with POSIX-compatible GNU extensions *\/$/;"	e	enum:posixicity_types
+POSIXLY_EXTENDED	sed.h	/^  POSIXLY_EXTENDED,	\/* with GNU extensions *\/$/;"	e	enum:posixicity_types
+PROC_CONT	debug.c	/^  PROC_CONT,$/;"	e	enum:__anon1	file:
+PROC_QUIT	debug.c	/^  PROC_QUIT,$/;"	e	enum:__anon1	file:
+PUNCT_BONUS	fmt.c	79;"	d	file:
+RAGGED_COST	fmt.c	52;"	d	file:
+RANGE_ACTIVE	sed.h	/^  RANGE_ACTIVE,		\/* between first and second address *\/$/;"	e	enum:addr_state
+RANGE_CLOSED	sed.h	/^  RANGE_CLOSED		\/* like RANGE_INACTIVE, but range has ended once *\/$/;"	e	enum:addr_state
+RANGE_INACTIVE	sed.h	/^  RANGE_INACTIVE,	\/* never been active *\/$/;"	e	enum:addr_state
+REPL_ASIS	sed.h	/^  REPL_ASIS = 0,$/;"	e	enum:replacement_types
+REPL_LOWERCASE	sed.h	/^  REPL_LOWERCASE = 2,$/;"	e	enum:replacement_types
+REPL_LOWERCASE_FIRST	sed.h	/^  REPL_LOWERCASE_FIRST = 8,$/;"	e	enum:replacement_types
+REPL_LOWERCASE_LOWERCASE	sed.h	/^  REPL_LOWERCASE_LOWERCASE = REPL_LOWERCASE_FIRST | REPL_LOWERCASE$/;"	e	enum:replacement_types
+REPL_LOWERCASE_UPPERCASE	sed.h	/^  REPL_LOWERCASE_UPPERCASE = REPL_LOWERCASE_FIRST | REPL_UPPERCASE,$/;"	e	enum:replacement_types
+REPL_MODIFIERS	sed.h	/^  REPL_MODIFIERS = REPL_UPPERCASE_FIRST | REPL_LOWERCASE_FIRST,$/;"	e	enum:replacement_types
+REPL_UPPERCASE	sed.h	/^  REPL_UPPERCASE = 1,$/;"	e	enum:replacement_types
+REPL_UPPERCASE_FIRST	sed.h	/^  REPL_UPPERCASE_FIRST = 4,$/;"	e	enum:replacement_types
+REPL_UPPERCASE_LOWERCASE	sed.h	/^  REPL_UPPERCASE_LOWERCASE = REPL_UPPERCASE_FIRST | REPL_LOWERCASE,$/;"	e	enum:replacement_types
+REPL_UPPERCASE_UPPERCASE	sed.h	/^  REPL_UPPERCASE_UPPERCASE = REPL_UPPERCASE_FIRST | REPL_UPPERCASE,$/;"	e	enum:replacement_types
+SENTENCE_BONUS	fmt.c	66;"	d	file:
+SHORTOPTS	sed.c	165;"	d	file:
+SHORTOPTS	sed.c	168;"	d	file:
+SHORT_COST	fmt.c	49;"	d	file:
+SIZEOF_LINE	execute.c	61;"	d	file:
+SIZEOF_LINE	execute.c	64;"	d	file:
+SQR	fmt.c	45;"	d	file:
+TABWIDTH	fmt.c	99;"	d	file:
+TEXT_BUFFER	sed.h	/^  TEXT_BUFFER,$/;"	e	enum:text_types
+TEXT_REGEX	sed.h	/^  TEXT_REGEX$/;"	e	enum:text_types
+TEXT_REPLACEMENT	sed.h	/^  TEXT_REPLACEMENT,$/;"	e	enum:text_types
+UNKNOWN_CMD	compile.c	167;"	d	file:
+UNKNOWN_CMD	compile.c	170;"	d	file:
+UNKNOWN_S_OPT	compile.c	158;"	d	file:
+UNKNOWN_S_OPT	compile.c	161;"	d	file:
+UNTERM_ADDR_RE	compile.c	155;"	d	file:
+UNTERM_ADDR_RE	compile.c	158;"	d	file:
+UNTERM_S_CMD	compile.c	156;"	d	file:
+UNTERM_S_CMD	compile.c	159;"	d	file:
+UNTERM_Y_CMD	compile.c	157;"	d	file:
+UNTERM_Y_CMD	compile.c	160;"	d	file:
+UNUSED	execute.c	43;"	d	file:
+UNUSED	execute.c	46;"	d	file:
+UNUSED	execute.c	47;"	d	file:
+UNUSED	execute.c	50;"	d	file:
+VECTOR_ALLOC_INCREMENT	compile.c	31;"	d	file:
+VECTOR_ALLOC_INCREMENT	compile.c	34;"	d	file:
+WCRTOMB	sed.h	252;"	d
+WIDOW_COST	fmt.c	59;"	d	file:
+WORD	fmt.c	/^typedef struct Word WORD;$/;"	t	typeref:struct:Word	file:
+Word	fmt.c	/^struct Word$/;"	s	file:
+YMAP_LENGTH	compile.c	30;"	d	file:
+YMAP_LENGTH	compile.c	33;"	d	file:
+Y_CMD_LEN	compile.c	163;"	d	file:
+Y_CMD_LEN	compile.c	166;"	d	file:
+ZERO_N_OPT	compile.c	162;"	d	file:
+ZERO_N_OPT	compile.c	165;"	d	file:
+a1	sed.h	/^  struct addr *a1;	\/* save space: usually is NULL *\/$/;"	m	struct:sed_cmd	typeref:struct:sed_cmd::addr
+a2	sed.h	/^  struct addr *a2;$/;"	m	struct:sed_cmd	typeref:struct:sed_cmd::addr
+active	debug.c	/^  char *active;		\/* Pointer to non-consumed part of text. *\/$/;"	m	struct:line	file:
+active	execute.c	/^  char *active;		\/* Pointer to non-consumed part of text. *\/$/;"	m	struct:line	file:
+add1_buffer	utils.c	/^add1_buffer(b, c)$/;"	f
+add_buffer	utils.c	/^add_buffer(b, p, n)$/;"	f
+add_then_next	compile.c	/^add_then_next(b, ch)$/;"	f	file:
+addr	sed.h	/^struct addr {$/;"	s
+addr_bang	sed.h	/^  char addr_bang;$/;"	m	struct:sed_cmd
+addr_number	sed.h	/^  countT addr_number;$/;"	m	struct:addr
+addr_regex	sed.h	/^  struct regex *addr_regex;$/;"	m	struct:addr	typeref:struct:addr::regex
+addr_state	sed.h	/^enum addr_state {$/;"	g
+addr_step	sed.h	/^  countT addr_step;$/;"	m	struct:addr
+addr_type	sed.h	/^  enum addr_types addr_type;$/;"	m	struct:addr	typeref:enum:addr::addr_types
+addr_types	sed.h	/^enum addr_types {$/;"	g
+alloc	debug.c	/^  size_t alloc;		\/* Allocated space for active. *\/$/;"	m	struct:line	file:
+alloc	execute.c	/^  size_t alloc;		\/* Allocated space for active. *\/$/;"	m	struct:line	file:
+allocated	utils.c	/^    size_t allocated;$/;"	m	struct:buffer	file:
+append_head	execute.c	/^static struct append_queue *append_head = NULL;$/;"	v	typeref:struct:append_queue	file:
+append_queue	execute.c	/^struct append_queue {$/;"	s	file:
+append_replacement	execute.c	/^static void append_replacement (struct line *buf, struct replacement *p,$/;"	f	file:
+append_tail	execute.c	/^static struct append_queue *append_tail = NULL;$/;"	v	typeref:struct:append_queue	file:
+b	utils.c	/^    char *b;$/;"	m	struct:buffer	file:
+bad_command	compile.c	/^bad_command(ch)$/;"	f
+bad_count	execute.c	/^  countT bad_count;	    $/;"	m	struct:input	file:
+bad_prog	compile.c	/^bad_prog(why)$/;"	f
+base	compile.c	/^  const unsigned char *base;$/;"	m	struct:prog_info	file:
+base_cost	fmt.c	/^base_cost (register WORD *this)$/;"	f	file:
+best_cost	fmt.c	/^    COST best_cost;		\/* cost of best paragraph starting here *\/$/;"	m	struct:Word	file:
+best_width	fmt.c	/^static int best_width;$/;"	v	file:
+blocks	compile.c	/^static struct sed_label *blocks = NULL;$/;"	v	typeref:struct:sed_label	file:
+branches	execute.c	/^static countT branches;$/;"	v	file:
+break_line	debug.c	/^countT break_line[BREAK_NUM] = {0};$/;"	v
+brlen	mbcs.c	/^int brlen (ch, cur_stat)$/;"	f
+buffer	execute.c	/^static struct line buffer;$/;"	v	typeref:struct:line	file:
+buffer	utils.c	/^struct buffer$/;"	s	file:
+buffer_delimiter	sed.c	/^char buffer_delimiter = '\\n';$/;"	v
+check_final_program	compile.c	/^check_final_program(program)$/;"	f
+check_punctuation	fmt.c	/^check_punctuation (register WORD *w)$/;"	f	file:
+chomped	debug.c	/^  bool chomped;		\/* Was a trailing newline dropped? *\/$/;"	m	struct:line	file:
+chomped	execute.c	/^  bool chomped;		\/* Was a trailing newline dropped? *\/$/;"	m	struct:line	file:
+ck_fclose	utils.c	/^ck_fclose(stream)$/;"	f
+ck_fdopen	utils.c	/^ck_fdopen(fd, name, mode, fail)$/;"	f
+ck_fflush	utils.c	/^ck_fflush(stream)$/;"	f
+ck_fopen	utils.c	/^ck_fopen(name, mode, fail)$/;"	f
+ck_fread	utils.c	/^ck_fread(ptr, size, nmemb, stream)$/;"	f
+ck_fwrite	utils.c	/^ck_fwrite(ptr, size, nmemb, stream)$/;"	f
+ck_getdelim	utils.c	/^ck_getdelim(text, buflen, buffer_delimiter, stream)$/;"	f
+ck_malloc	utils.c	/^ck_malloc(size)$/;"	f
+ck_memdup	utils.c	/^ck_memdup(buf, len)$/;"	f
+ck_mkstemp	utils.c	/^ck_mkstemp (p_filename, tmpdir, base, mode)$/;"	f
+ck_realloc	utils.c	/^ck_realloc(ptr, size)$/;"	f
+ck_rename	utils.c	/^ck_rename (from, to, unlink_if_fail)$/;"	f
+ck_strdup	utils.c	/^ck_strdup(str)$/;"	f
+closedown	execute.c	/^closedown(input)$/;"	f	file:
+cmd	sed.h	/^  char cmd;$/;"	m	struct:sed_cmd
+cmd_subst	sed.h	/^    struct subst *cmd_subst;$/;"	m	union:sed_cmd::__anon1	typeref:struct:sed_cmd::__anon1::subst
+cmd_subst	sed.h	/^    struct subst *cmd_subst;$/;"	m	union:sed_cmd::__anon3	typeref:struct:sed_cmd::__anon3::subst
+cmd_txt	sed.h	/^    struct text_buf cmd_txt;$/;"	m	union:sed_cmd::__anon1	typeref:struct:sed_cmd::__anon1::text_buf
+cmd_txt	sed.h	/^    struct text_buf cmd_txt;$/;"	m	union:sed_cmd::__anon3	typeref:struct:sed_cmd::__anon3::text_buf
+compile_address	compile.c	/^compile_address(addr, ch)$/;"	f	file:
+compile_file	compile.c	/^compile_file(cur_program, cmdfile)$/;"	f
+compile_program	compile.c	/^compile_program(vector)$/;"	f	file:
+compile_regex	regexp.c	/^compile_regex(b, flags, needed_sub)$/;"	f
+compile_regex_1	regexp.c	/^compile_regex_1 (new_regex, needed_sub)$/;"	f	file:
+compile_string	compile.c	/^compile_string(cur_program, str, len)$/;"	f
+contact	sed.c	/^contact(errmsg)$/;"	f	file:
+convert_number	compile.c	/^convert_number(result, buf, bufend, base)$/;"	f	file:
+copy_regs	regexp.c	/^copy_regs (regs, pmatch, nregs)$/;"	f	file:
+copy_rest	fmt.c	/^copy_rest (register int c)$/;"	f	file:
+count_branches	execute.c	/^count_branches(program)$/;"	f	file:
+cur	compile.c	/^  const unsigned char *cur;$/;"	m	struct:prog_info	file:
+cur_input	compile.c	/^static struct error_info cur_input;$/;"	v	typeref:struct:error_info	file:
+debug_cmd	debug.c	/^debug_cmd(int state, char *msg, struct sed_cmd *cmd,$/;"	f
+debug_flag	debug.c	/^bool debug_flag;$/;"	v
+debug_flag	sed.c	/^bool debug_flag = false;$/;"	v
+debug_stat_break	debug.h	/^  debug_stat_break,$/;"	e	enum:__anon2
+debug_stat_invalid	debug.h	/^  debug_stat_invalid = 0,$/;"	e	enum:__anon2
+debug_stat_prog_end	debug.h	/^  debug_stat_prog_end,$/;"	e	enum:__anon2
+debug_stat_start	debug.h	/^  debug_stat_start = 1,$/;"	e	enum:__anon2
+debug_stat_step	debug.h	/^  debug_stat_step,$/;"	e	enum:__anon2
+do_ck_fclose	utils.c	/^do_ck_fclose(fp)$/;"	f
+do_list	execute.c	/^do_list(line_len)$/;"	f	file:
+do_subst	execute.c	/^do_subst(sub)$/;"	f	file:
+dump_append_queue	execute.c	/^dump_append_queue()$/;"	f	file:
+end	compile.c	/^  const unsigned char *end;$/;"	m	struct:prog_info	file:
+end	sed.h	/^  regoff_t *end;$/;"	m	struct:re_registers
+end_of_parabuf	fmt.c	/^static const char *end_of_parabuf;$/;"	v	file:
+err_info	compile.c	/^  struct error_info err_info;	\/* track where `{}' blocks start *\/$/;"	m	struct:sed_label	typeref:struct:sed_label::error_info	file:
+error_info	compile.c	/^struct error_info {$/;"	s	file:
+errors	compile.c	/^static const char errors[] =$/;"	v	file:
+errors	regexp.c	/^static const char errors[] =$/;"	v	file:
+eval	sed.h	/^  unsigned eval : 1;	\/* 'e' option given *\/$/;"	m	struct:subst
+execute_program	execute.c	/^execute_program(vec, input)$/;"	f	file:
+extended_regexp_flags	sed.c	/^int extended_regexp_flags = 0;$/;"	v
+file	compile.c	/^  FILE *file;$/;"	m	struct:prog_info	file:
+file_list	execute.c	/^  char **file_list;$/;"	m	struct:input	file:
+file_read	compile.c	/^static struct output *file_read = NULL;$/;"	v	typeref:struct:output	file:
+file_write	compile.c	/^static struct output *file_write = NULL;$/;"	v	typeref:struct:output	file:
+final	fmt.c	/^    unsigned final:1;		\/* end of sentence *\/$/;"	m	struct:Word	file:
+finish_program	compile.c	/^finish_program(program)$/;"	f
+first_indent	fmt.c	/^static int first_indent;$/;"	v	file:
+first_script	compile.c	/^static bool first_script = true;$/;"	v	file:
+flags	sed.h	/^  int flags;$/;"	m	struct:regex
+flush_output	execute.c	/^flush_output(fp)$/;"	f	file:
+flush_paragraph	fmt.c	/^flush_paragraph (void)$/;"	f	file:
+fmt	fmt.c	/^fmt (const char *line, const char *line_end, int max_length, FILE *output_file)$/;"	f
+fmt_paragraph	fmt.c	/^fmt_paragraph (void)$/;"	f	file:
+fname	execute.c	/^  const char *fname;$/;"	m	struct:append_queue	file:
+fname	sed.h	/^    char *fname;$/;"	m	union:sed_cmd::__anon1
+fname	sed.h	/^    char *fname;$/;"	m	union:sed_cmd::__anon3
+follow_symlink	utils.c	/^follow_symlink(const char *fname)$/;"	f
+follow_symlinks	sed.c	/^bool follow_symlinks = false;$/;"	v
+fp	execute.c	/^  FILE *fp;$/;"	m	struct:input	file:
+fp	sed.h	/^    FILE *fp;$/;"	m	union:sed_cmd::__anon1
+fp	sed.h	/^    FILE *fp;$/;"	m	union:sed_cmd::__anon3
+fp	sed.h	/^  FILE *fp;$/;"	m	struct:output
+fp	utils.c	/^    FILE *fp;$/;"	m	struct:open_file	file:
+free	execute.c	/^  bool free;$/;"	m	struct:append_queue	file:
+free_buffer	utils.c	/^free_buffer(b)$/;"	f
+get_backup_file_name	execute.c	/^get_backup_file_name(name)$/;"	f	file:
+get_buffer	utils.c	/^get_buffer(b)$/;"	f
+get_line	fmt.c	/^get_line (register int c)$/;"	f	file:
+get_openfile	compile.c	/^get_openfile(file_ptrs, mode, fail)$/;"	f	file:
+get_paragraph	fmt.c	/^get_paragraph ()$/;"	f	file:
+get_space	fmt.c	/^get_space (register int c)$/;"	f	file:
+global	sed.h	/^  unsigned global : 1;	\/* 'g' option given *\/$/;"	m	struct:subst
+gsed_debug_close_connection	debug.c	/^gsed_debug_close_connection(char *msg)$/;"	f
+gsed_debug_close_connection	net.c	/^gsed_debug_close_connection(char *msg)$/;"	f
+gsed_debug_open_connection	debug.c	/^gsed_debug_open_connection()$/;"	f
+gsed_debug_open_connection	net.c	/^gsed_debug_open_connection()$/;"	f
+gsed_debug_recv_commands	debug.c	/^gsed_debug_recv_commands(char *buf)$/;"	f
+gsed_debug_recv_commands	net.c	/^gsed_debug_recv_commands(char *buf)$/;"	f
+gsed_debug_send_message	debug.c	/^gsed_debug_send_message(char *msg)$/;"	f
+gsed_debug_send_message	net.c	/^gsed_debug_send_message(char *msg)$/;"	f
+hold	execute.c	/^static struct line hold;$/;"	v	typeref:struct:line	file:
+in_column	fmt.c	/^static int in_column;$/;"	v	file:
+in_file_name	execute.c	/^  const char *in_file_name;$/;"	m	struct:input	file:
+in_integer	compile.c	/^in_integer(ch)$/;"	f	file:
+in_nonblank	compile.c	/^in_nonblank()$/;"	f	file:
+in_place_extension	sed.c	/^char *in_place_extension = NULL;$/;"	v
+inchar	compile.c	/^inchar()$/;"	f	file:
+init_buffer	utils.c	/^init_buffer()$/;"	f
+initialize_mbcs	mbcs.c	/^initialize_mbcs ()$/;"	f
+input	execute.c	/^struct input {$/;"	s	file:
+int_arg	sed.h	/^    int int_arg;$/;"	m	union:sed_cmd::__anon1
+int_arg	sed.h	/^    int int_arg;$/;"	m	union:sed_cmd::__anon3
+is_utf8	mbcs.c	/^bool is_utf8;$/;"	v
+isclose	fmt.c	94;"	d	file:
+isopen	fmt.c	93;"	d	file:
+isperiod	fmt.c	95;"	d	file:
+jump_index	sed.h	/^    countT jump_index;$/;"	m	union:sed_cmd::__anon1
+jump_index	sed.h	/^    countT jump_index;$/;"	m	union:sed_cmd::__anon3
+jumps	compile.c	/^static struct sed_label *jumps = NULL;$/;"	v	typeref:struct:sed_label	file:
+labels	compile.c	/^static struct sed_label *labels = NULL;$/;"	v	typeref:struct:sed_label	file:
+last_file_with_data_p	execute.c	/^last_file_with_data_p(input)$/;"	f	file:
+last_line_length	fmt.c	/^static int last_line_length;$/;"	v	file:
+lcmd_out_line_len	sed.c	/^countT lcmd_out_line_len = 70;$/;"	v
+length	debug.c	/^  size_t length;	\/* Length of text (or active, if used). *\/$/;"	m	struct:line	file:
+length	execute.c	/^  size_t length;	\/* Length of text (or active, if used). *\/$/;"	m	struct:line	file:
+length	fmt.c	/^    short length;		\/* length of this word *\/$/;"	m	struct:Word	file:
+length	utils.c	/^    size_t length;$/;"	m	struct:buffer	file:
+line	compile.c	/^  countT line;$/;"	m	struct:error_info	file:
+line	debug.c	/^struct line {$/;"	s	file:
+line	execute.c	/^static struct line line;$/;"	v	typeref:struct:line	file:
+line	execute.c	/^struct line {$/;"	s	file:
+line	sed.h	/^  countT line;$/;"	m	struct:sed_cmd
+line_append	execute.c	/^line_append(from, to, state)$/;"	f	file:
+line_copy	execute.c	/^line_copy(from, to, state)$/;"	f	file:
+line_cost	fmt.c	/^line_cost (register WORD *next, register int len)$/;"	f	file:
+line_exchange	execute.c	/^line_exchange(a, b, state)$/;"	f	file:
+line_init	execute.c	/^line_init(buf, state, initial_size)$/;"	f	file:
+line_length	fmt.c	/^    short line_length;		\/* length of the best line starting here *\/$/;"	m	struct:Word	file:
+line_number	execute.c	/^  countT line_number;	    $/;"	m	struct:input	file:
+line_reset	execute.c	/^line_reset(buf, state)$/;"	f	file:
+link	sed.h	/^  struct output *link;$/;"	m	struct:output	typeref:struct:output::output
+link	utils.c	/^    struct open_file *link;$/;"	m	struct:open_file	typeref:struct:open_file::open_file	file:
+main	net.c	/^main(int argc, char **argv)$/;"	f
+main	sed.c	/^main(argc, argv)$/;"	f
+mark_subst_opts	compile.c	/^mark_subst_opts(cmd)$/;"	f	file:
+match_address_p	execute.c	/^match_address_p(cmd, input)$/;"	f	file:
+match_an_address_p	execute.c	/^match_an_address_p(addr, input)$/;"	f	file:
+match_regex	regexp.c	/^match_regex(regex, buf, buflen, buf_start_offset, regarray, regsize)$/;"	f
+match_slash	compile.c	/^match_slash(slash, regex)$/;"	f	file:
+max_id	sed.h	/^  unsigned max_id : 4;  \/* maximum backreference on the RHS *\/$/;"	m	struct:subst
+max_width	fmt.c	/^static int max_width;$/;"	v	file:
+mb_cur_max	mbcs.c	/^int mb_cur_max;$/;"	v
+mbstate	debug.c	/^  mbstate_t mbstate;$/;"	m	struct:line	file:
+mbstate	execute.c	/^  mbstate_t mbstate;$/;"	m	struct:line	file:
+missing_newline	sed.h	/^  bool missing_newline;$/;"	m	struct:output
+my_stderr	compile.c	/^FILE *my_stdin, *my_stdout, *my_stderr;$/;"	v
+my_stdin	compile.c	/^FILE *my_stdin, *my_stdout, *my_stderr;$/;"	v
+my_stdout	compile.c	/^FILE *my_stdin, *my_stdout, *my_stderr;$/;"	v
+myname	utils.c	/^const char *myname;$/;"	v
+name	compile.c	/^  char *name;			\/* NUL-terminated name of the label *\/$/;"	m	struct:sed_label	file:
+name	compile.c	/^  const char *name;$/;"	m	struct:error_info	file:
+name	sed.h	/^  char *name;$/;"	m	struct:output
+name	utils.c	/^    char *name;$/;"	m	struct:open_file	file:
+new_replacement	compile.c	/^new_replacement(char *text, size_t length, enum replacement_types type)$/;"	f	file:
+next	compile.c	/^  struct sed_label *next;	\/* linked list (stack) *\/$/;"	m	struct:sed_label	typeref:struct:sed_label::sed_label	file:
+next	execute.c	/^  struct append_queue *next;$/;"	m	struct:append_queue	typeref:struct:append_queue::append_queue	file:
+next	sed.h	/^  struct replacement *next;$/;"	m	struct:replacement	typeref:struct:replacement::replacement
+next_append_slot	execute.c	/^next_append_slot()$/;"	f	file:
+next_break	fmt.c	/^    WORD *next_break;		\/* break which achieves best_cost *\/$/;"	m	struct:Word	file:
+next_char	fmt.c	/^static int next_char;$/;"	v	file:
+next_cmd_entry	compile.c	/^next_cmd_entry(vectorp)$/;"	f	file:
+no_buffering	execute.c	/^  bool no_buffering;$/;"	m	struct:input	file:
+no_default_output	sed.c	/^bool no_default_output = false;$/;"	v
+normalize_text	compile.c	/^normalize_text(buf, len, buftype)$/;"	f
+num_regs	sed.h	/^  unsigned num_regs;$/;"	m	struct:re_registers
+numb	sed.h	/^  countT numb;		\/* if >0, only substitute for match number "numb" *\/$/;"	m	struct:subst
+obs	compile.c	/^static struct obstack obs;$/;"	v	typeref:struct:obstack	file:
+old_text_buf	compile.c	/^static struct text_buf *old_text_buf = NULL;$/;"	v	typeref:struct:text_buf	file:
+open_file	utils.c	/^struct open_file$/;"	s	file:
+open_files	utils.c	/^static struct open_file *open_files = NULL;$/;"	v	typeref:struct:open_file	file:
+open_next_file	execute.c	/^open_next_file(name, input)$/;"	f	file:
+other_indent	fmt.c	/^static int other_indent;$/;"	v	file:
+out_column	fmt.c	/^static int out_column;$/;"	v	file:
+out_file_name	execute.c	/^  char *out_file_name;$/;"	m	struct:input	file:
+outf	compile.c	/^  struct output outf;$/;"	m	struct:special_files	typeref:struct:special_files::output	file:
+outf	sed.h	/^    struct output *outf;$/;"	m	union:sed_cmd::__anon1	typeref:struct:sed_cmd::__anon1::output
+outf	sed.h	/^    struct output *outf;$/;"	m	union:sed_cmd::__anon3	typeref:struct:sed_cmd::__anon3::output
+outf	sed.h	/^  struct output *outf;	\/* 'w' option given *\/$/;"	m	struct:subst	typeref:struct:subst::output
+outfile	fmt.c	/^static FILE *outfile;$/;"	v	file:
+output	sed.h	/^struct output {$/;"	s
+output_file	execute.c	/^static struct output output_file;$/;"	v	typeref:struct:output	file:
+output_line	execute.c	/^output_line(text, length, nl, outf)$/;"	f	file:
+output_missing_newline	execute.c	/^output_missing_newline(outf)$/;"	f	file:
+panic	utils.c	/^panic(const char *str, ...)$/;"	f
+parabuf	fmt.c	/^static const char *parabuf;$/;"	v	file:
+paren	fmt.c	/^    unsigned paren:1;		\/* starts with open paren *\/$/;"	m	struct:Word	file:
+pattern	sed.h	/^  regex_t pattern;$/;"	m	struct:regex
+pending_text	compile.c	/^static struct buffer *pending_text = NULL;$/;"	v	typeref:struct:buffer	file:
+period	fmt.c	/^    unsigned period:1;		\/* ends in [.?!])* *\/$/;"	m	struct:Word	file:
+pfp	compile.c	/^  FILE **pfp;$/;"	m	struct:special_files	file:
+posixicity	sed.c	/^enum posixicity_types posixicity;$/;"	v	typeref:enum:posixicity_types
+posixicity_types	sed.h	/^enum posixicity_types {$/;"	g
+prefix	sed.h	/^  char *prefix;$/;"	m	struct:replacement
+prefix_length	sed.h	/^  size_t prefix_length;$/;"	m	struct:replacement
+print	sed.h	/^  unsigned print : 2;	\/* 'p' option given (before\/after eval) *\/$/;"	m	struct:subst
+proc_debug_command	debug.c	/^proc_debug_command(char *cmd)$/;"	f	file:
+process_files	execute.c	/^process_files(the_program, argv)$/;"	f
+prog	compile.c	/^static struct prog_info prog;$/;"	v	typeref:struct:prog_info	file:
+prog_info	compile.c	/^struct prog_info {$/;"	s	file:
+program_name	sed.c	/^char *program_name;$/;"	v
+punct	fmt.c	/^    unsigned punct:1;		\/* ends in punctuation *\/$/;"	m	struct:Word	file:
+put_line	fmt.c	/^put_line (register WORD *w, int indent)$/;"	f	file:
+put_paragraph	fmt.c	/^put_paragraph (register WORD *finish)$/;"	f	file:
+put_space	fmt.c	/^put_space (int space)$/;"	f	file:
+put_word	fmt.c	/^put_word (register WORD *w)$/;"	f	file:
+range_state	sed.h	/^  enum addr_state range_state;$/;"	m	struct:sed_cmd	typeref:enum:sed_cmd::addr_state
+re	sed.h	/^  char re[1];$/;"	m	struct:regex
+re_registers	sed.h	/^struct re_registers$/;"	s
+read_always_fail	execute.c	/^read_always_fail(input)$/;"	f	file:
+read_file_line	execute.c	/^read_file_line(input)$/;"	f	file:
+read_filename	compile.c	/^read_filename()$/;"	f	file:
+read_fn	execute.c	/^  bool (*read_fn) (struct input *);	\/* read one line *\/$/;"	m	struct:input	file:
+read_label	compile.c	/^read_label()$/;"	f	file:
+read_mode	sed.c	/^char *read_mode = "r";$/;"	v
+read_pattern_space	execute.c	/^read_pattern_space(input, the_program, append)$/;"	f	file:
+read_text	compile.c	/^read_text(buf, leadin_ch)$/;"	f	file:
+regex	sed.h	/^struct regex {$/;"	s
+register_open_file	utils.c	/^register_open_file (fp, name, temp)$/;"	f	file:
+regx	sed.h	/^  struct regex *regx;$/;"	m	struct:subst	typeref:struct:subst::regex
+release_append_queue	execute.c	/^release_append_queue()$/;"	f	file:
+release_label	compile.c	/^release_label(list_head)$/;"	f	file:
+release_regex	regexp.c	/^release_regex(regex)$/;"	f
+repl_type	sed.h	/^  enum replacement_types repl_type;$/;"	m	struct:replacement	typeref:enum:replacement::replacement_types
+replaced	execute.c	/^static bool replaced = false;$/;"	v	file:
+replacement	sed.h	/^  struct replacement *replacement;$/;"	m	struct:subst	typeref:struct:subst::replacement
+replacement	sed.h	/^struct replacement {$/;"	s
+replacement_types	sed.h	/^enum replacement_types {$/;"	g
+reset_addresses	execute.c	/^reset_addresses(vec)$/;"	f	file:
+reset_at_next_file	execute.c	/^  bool reset_at_next_file;$/;"	m	struct:input	file:
+resize_buffer	utils.c	/^resize_buffer(b, newlen)$/;"	f	file:
+resize_line	execute.c	/^resize_line(lb, len)$/;"	f	file:
+rewind_read_files	compile.c	/^rewind_read_files()$/;"	f
+s_accum	execute.c	/^static struct line s_accum;$/;"	v	typeref:struct:line	file:
+same_para	fmt.c	/^same_para (register int c)$/;"	f	file:
+savchar	compile.c	/^savchar(ch)$/;"	f	file:
+sed_cmd	sed.h	/^struct sed_cmd {$/;"	s
+sed_label	compile.c	/^struct sed_label {$/;"	s	file:
+separate_files	sed.c	/^bool separate_files = false;$/;"	v
+setup_label	compile.c	/^setup_label(list, idx, name, err_info)$/;"	f	file:
+setup_replacement	compile.c	/^setup_replacement(sub, text, length)$/;"	f	file:
+shrink_program	execute.c	/^shrink_program(vec, cur_cmd)$/;"	f	file:
+size_buffer	utils.c	/^size_buffer(b)$/;"	f
+snarf_char_class	compile.c	/^snarf_char_class(b, cur_stat)$/;"	f	file:
+sock	debug.h	/^static int sock;$/;"	v
+sock	net.c	/^static int sock;$/;"	v	file:
+sock_file	debug.h	/^static FILE *sock_file;$/;"	v
+sock_file	net.c	/^static FILE *sock_file;$/;"	v	file:
+space	fmt.c	/^    short space;		\/* the size of the following space *\/$/;"	m	struct:Word	file:
+special_files	compile.c	/^struct special_files special_files[] = {$/;"	v	typeref:struct:special_files
+special_files	compile.c	/^struct special_files {$/;"	s	file:
+st	execute.c	/^  struct stat st;$/;"	m	struct:input	typeref:struct:input::stat	file:
+start	sed.h	/^  regoff_t *start;$/;"	m	struct:re_registers
+step_by_step	debug.c	/^bool step_by_step = false;$/;"	v
+stop_check	debug.c	/^stop_check(countT line)$/;"	f
+str_append	execute.c	/^str_append(to, string, length)$/;"	f	file:
+str_append_modified	execute.c	/^str_append_modified(struct line *to, const char *string, size_t length,$/;"	f	file:
+string_expr_count	compile.c	/^  countT string_expr_count;$/;"	m	struct:error_info	file:
+subst	sed.h	/^struct subst {$/;"	s
+subst_id	sed.h	/^  int subst_id;$/;"	m	struct:replacement
+sz	sed.h	/^  size_t sz;$/;"	m	struct:regex
+temp	utils.c	/^    unsigned temp : 1;$/;"	m	struct:open_file	file:
+test_eof	execute.c	/^test_eof(input)$/;"	f	file:
+text	debug.c	/^  char *text;		\/* Pointer to line allocated by malloc. *\/$/;"	m	struct:line	file:
+text	execute.c	/^  char *text;		\/* Pointer to line allocated by malloc. *\/$/;"	m	struct:line	file:
+text	execute.c	/^  char *text;$/;"	m	struct:append_queue	file:
+text	fmt.c	/^    const char *text;		\/* the text of the word *\/$/;"	m	struct:Word	file:
+text	sed.h	/^  char *text;$/;"	m	struct:text_buf
+text_buf	sed.h	/^struct text_buf {$/;"	s
+text_length	sed.h	/^  size_t text_length;$/;"	m	struct:text_buf
+text_types	sed.h	/^enum text_types {$/;"	g
+textlen	execute.c	/^  size_t textlen;$/;"	m	struct:append_queue	file:
+the_program	sed.c	/^static struct vector *the_program = NULL;$/;"	v	typeref:struct:vector	file:
+translate	sed.h	/^    unsigned char *translate;$/;"	m	union:sed_cmd::__anon1
+translate	sed.h	/^    unsigned char *translate;$/;"	m	union:sed_cmd::__anon3
+translatemb	sed.h	/^    char **translatemb;$/;"	m	union:sed_cmd::__anon1
+translatemb	sed.h	/^    char **translatemb;$/;"	m	union:sed_cmd::__anon3
+unbuffered	sed.c	/^bool unbuffered = false;$/;"	v
+usage	sed.c	/^usage(status)$/;"	f	file:
+utils_fp_name	utils.c	/^utils_fp_name(fp)$/;"	f	file:
+v	sed.h	/^  struct sed_cmd *v;	\/* a dynamically allocated array *\/$/;"	m	struct:vector	typeref:struct:vector::sed_cmd
+v_allocated	sed.h	/^  size_t v_allocated;	\/* ... number slots allocated *\/$/;"	m	struct:vector
+v_index	compile.c	/^  countT v_index;		\/* index of vector element being referenced *\/$/;"	m	struct:sed_label	file:
+v_length	sed.h	/^  size_t v_length;	\/* ... number of slots in use *\/$/;"	m	struct:vector
+vector	sed.h	/^struct vector {$/;"	s
+word_limit	fmt.c	/^static WORD *word_limit;$/;"	v	file:
+words	fmt.c	/^static WORD words[MAXWORDS];$/;"	v	file:
+write_mode	sed.c	/^char *write_mode = "w";$/;"	v
+x	sed.h	/^  } x;$/;"	m	struct:sed_cmd	typeref:union:sed_cmd::__anon1
+x	sed.h	/^  } x;$/;"	m	struct:sed_cmd	typeref:union:sed_cmd::__anon3
