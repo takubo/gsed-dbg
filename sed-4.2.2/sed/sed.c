@@ -145,6 +145,10 @@ Usage: %s [OPTION]... {script-only-if-no-other-script} [input-file]...\n\
                  the output buffers more often\n"));
   fprintf(out, _("  -z, --null-data\n\
                  separate lines by NUL characters\n"));
+#if 1 //SED_DBG
+  fprintf(out, _("  -d, --debug\n\
+                 start with debugger mode\n"));
+#endif
   fprintf(out, _("      --help     display this help and exit\n"));
   fprintf(out, _("      --version  output version information and exit\n"));
   fprintf(out, _("\n\
