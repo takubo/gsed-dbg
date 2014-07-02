@@ -50,7 +50,7 @@ gsed_debug_open_connection()
   bzero(&addr, sizeof(addr));
 
   addr.sin_family = AF_INET;
-  addr.sin_port = htons(1234);
+  addr.sin_port = htons(33333);
   addr.sin_addr.s_addr = INADDR_ANY;
 
   bind(sock0, (struct sockaddr *)&addr, sizeof(addr));
