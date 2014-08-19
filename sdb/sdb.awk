@@ -43,10 +43,19 @@ function get_recv_num(cmd) {
 	sleep(1)
 
 	switch (substr(cmd, 1, 1)) {
+	case "p":
+		switch (substr(cmd, 3, 4)) {
+		case "PTRN":
+		case "HOLD":
+		case "FLAG":
+			return 1
+			break
+		}
+		return 3
+		break
 	case "b":
 	case "d":
 	case "h":
-	case "p":
 	case "q":
 		return 1
 		break
