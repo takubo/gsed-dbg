@@ -28,6 +28,7 @@ extern countT break_line[];
 enum {
   debug_stat_invalid = 0,
   debug_stat_start = 1,
+  debug_stat_end,
   debug_stat_break,
   debug_stat_step,
   debug_stat_prog_end,
