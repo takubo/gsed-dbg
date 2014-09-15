@@ -1771,5 +1771,12 @@ process_files(the_program, argv)
   if (input.bad_count)
     status = 2;
 
+#if 1 //SED_DBG
+  if (debug_flag)
+    {
+      debug_cmd(debug_stat_end, NULL, NULL, &line, &hold, &replaced);
+    }
+#endif
+
   return status;
 }
