@@ -359,9 +359,18 @@ main(argc, argv)
     }
 #endif
 
+#if 0 //SED_DBG
+retake:
+#endif
   return_code = process_files(the_program, argv+optind);
 
   finish_program(the_program);
+#if 0 //SED_DBG
+  if (debug_flag)
+    {
+      // goto retake;
+    }
+#endif
   ck_fclose(NULL);
 
   return return_code;
