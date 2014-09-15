@@ -83,16 +83,18 @@ debug_cmd(int state, char *msg, struct sed_cmd *cmd,
   int ret;
 
   if (state == debug_stat_start) {
+  } else if (state == debug_stat_end) {
+    gsed_debug_send_message(RES_HEADER "program finished.");
   } else {
     if (state == debug_stat_break) {
       char msg[1024];
 
-      sprintf(msg, RES_HEADER "stop by break Point : line = %d\n", cmd->line);
+      sprintf(msg, RES_HEADER "stop by break Point : line = %d", cmd->line);
       gsed_debug_send_message(msg);
     } else if (state == debug_stat_step) {
       char msg[1024];
 
-      sprintf(msg, RES_HEADER "stop by stepping executtion : line = %d\n", cmd->line);
+      sprintf(msg, RES_HEADER "stop by stepping executtion : line = %d", cmd->line);
       gsed_debug_send_message(msg);
     }
     // fprintf(stderr, SED_HEADER "Line : %d\n", cmd->line);
@@ -101,23 +103,34 @@ debug_cmd(int state, char *msg, struct sed_cmd *cmd,
     // fprintf(stderr, SED_HEADER "Flag : %s\n", replaced ? "T" : "F");
   }
 
-  do {
-loop:
-    gsed_debug_recv_commands(input);
-    ret = proc_debug_command(input, res_msg + strlen(RES_HEADER));
+  do
+    {
+      gsed_debug_recv_commands(input);
+      ret = proc_debug_command(input, res_msg + strlen(RES_HEADER));
 
-    switch (ret) {
-      case PRINT_ALL: case PRINT_PTRN: case PRINT_HOLD: case PRINT_FLAG:
-	gsed_debug_print(ret, ps, hs, replaced);
-	goto loop;
-      default:
-	gsed_debug_send_message(res_msg);
-	break;
+      switch (ret)
+	{
+	case PRINT_ALL: case PRINT_PTRN: case PRINT_HOLD: case PRINT_FLAG:
+	  gsed_debug_print(ret, ps, hs, replaced);
+	  break;
+	default:
+	  gsed_debug_send_message(res_msg);
+	  break;
+	}
+
+      if (ret == PROC_QUIT)
+	{
+	  gsed_debug_close_connection("");
+	  if (state == debug_stat_end)
+	    break;
+	  else
+	    exit(0);
+	}
+
     }
-  } while (ret == MORE_CMD);
+  while (ret != PROC_CONT || state == debug_stat_end);
 
-  if (ret == PROC_QUIT)
-    exit(0);
+  return 0;
 }
 
 
@@ -170,7 +183,7 @@ proc_debug_command(char *cmd, char *res_msg)
 	    if (break_line[i] == n)
 	      {
 		break_line[i] = 0;
-		sprintf(res_msg, "break delete line = %d id = %d\n", n, i);
+		sprintf(res_msg, "break delete line = %d id = %d", n, i);
 		break;
 	      }
 #endif
@@ -188,11 +201,11 @@ proc_debug_command(char *cmd, char *res_msg)
 
 /* print */
       case 'p':
-	if (strncmp("PTRN", cmd + 2, 4))
+	if (!strncmp("PTRN", cmd + 2, 4))
 	  ret = PRINT_PTRN;
-	else if (strncmp("HOLD", cmd + 2, 4))
+	else if (!strncmp("HOLD", cmd + 2, 4))
 	  ret = PRINT_HOLD;
-	else if (strncmp("FLAG", cmd + 2, 4))
+	else if (!strncmp("FLAG", cmd + 2, 4))
 	  ret = PRINT_FLAG;
 	else
 	  ret = PRINT_ALL;
@@ -200,16 +213,18 @@ proc_debug_command(char *cmd, char *res_msg)
 
 /* quit */
       case 'q':
-	{
-	  strcpy(res_msg, "quit");
+	  strncpy(res_msg, "quit", strlen("quit") + 1);
 	  ret = PROC_QUIT;
 	  break;
-	}
+
+/* hello */
+      case 'h':
+	  strcpy(res_msg, "hello");
+	  break;
 
 /* invalid command */
       default:
 	strcpy(res_msg, "INVALID_CMD!!!");
-	ret = INVALID_CMD;
 	break;
     }
 
@@ -227,17 +242,17 @@ gsed_debug_print(int mode,
 
   if (mode == PRINT_PTRN || mode == PRINT_ALL)
     {
-      sprintf(msg, RES_HEADER "value PTRN : %s", ps->active);
+      sprintf(msg, RES_HEADER "value [PTRN] : %s", ps->active);
       gsed_debug_send_message(msg);
     }
   if (mode == PRINT_HOLD || mode == PRINT_ALL)
     {
-      sprintf(msg, RES_HEADER "value HOLD : %s", hs->active);
+      sprintf(msg, RES_HEADER "value [HOLD] : %s", hs->active);
       gsed_debug_send_message(msg);
     }
   if (mode == PRINT_FLAG || mode == PRINT_ALL)
     {
-      sprintf(msg, RES_HEADER "value FLAG : %s", replaced ? "T" : "F");
+      sprintf(msg, RES_HEADER "value [FLAG] : %s", replaced ? "T" : "F");
       gsed_debug_send_message(msg);
     }
 
@@ -303,7 +318,7 @@ gsed_debug_open_connection()
 int
 gsed_debug_close_connection(char *msg)
 {
-  gsed_debug_send_message(msg);
+  // gsed_debug_send_message(msg);
 
   /* TCPセッションの終了 */
   shutdown(sock, SHUT_RDWR);
