@@ -1,3 +1,5 @@
+#!/usr/bin/sed -f
+
 /^$/ {
 	s/.*/no input./
 	b illegal_input
@@ -20,7 +22,10 @@ s/$/ F B #/
 :loop
 
 # quit
-/^0\+ /q
+/^0\+ / {
+	d
+	q
+}
 
 # decrement
 s/ /n /
